@@ -1,6 +1,12 @@
 # Claims Intelligence Engine
 
-Small demo for checking if study evidence supports a product claim.
+
+
+https://github.com/user-attachments/assets/d5ff9f94-8197-40a0-b403-35a135c416d3
+
+
+
+
 
 ## Run locally
 
