@@ -1,0 +1,11 @@
+{
+  "name": "claims-intelligence-engine",
+  "private": true,
+  "workspaces": ["server", "UI"],
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:ui": "npm run dev -w ui",
+    "build": "npm run build -w server && npm run build -w ui",
+    "db:setup": "npm run db:setup -w server"
+  }
+}

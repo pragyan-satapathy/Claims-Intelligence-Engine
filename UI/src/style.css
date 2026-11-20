@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f5f2; color: #222; font: 16px/1.5 Arial, sans-serif; }
+main { max-width: 720px; margin: 48px auto; padding: 0 20px; }
+h1 { margin-bottom: 4px; }
+form, section { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 24px; margin-top: 24px; }
+label { display: block; font-weight: 600; margin-bottom: 16px; }
+input, textarea { display: block; width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #bbb; border-radius: 4px; font: inherit; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+button { border: 0; border-radius: 4px; padding: 10px 16px; background: #222; color: white; cursor: pointer; font: inherit; }
+button:disabled { opacity: .6; cursor: wait; }
+.secondary { background: #e8e4df; color: #222; }
+.error { color: #a20; }
+small { color: #666; }

@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Claim {
+  id          String       @id @default(cuid())
+  text        String
+  formula     String
+  createdAt   DateTime     @default(now())
+  assessments Assessment[]
+}
+
+model Assessment {
+  id         String   @id @default(cuid())
+  claimId    String
+  claim      Claim    @relation(fields: [claimId], references: [id])
+  evidence   String
+  justified  Boolean
+  confidence Int
+  reasoning  String
+  model      String
+  createdAt  DateTime @default(now())
+}
